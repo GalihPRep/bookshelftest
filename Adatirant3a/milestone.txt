@@ -1,0 +1,15 @@
+Tambahkan fitur pencarian untuk mem-filter buku yang ditampilkan pada rak sesuai dengan title buku yang dituliskan pada kolom pencarian.
+status: SUDAH
+
+Berkreasilah dengan membuat proyek Bookshelf Apps tanpa menggunakan project starter.
+
+Menuliskan kode dengan bersih.
+
+Bersihkan comment dan kode yang tidak digunakan.
+
+Indentasi yang sesuai.
+
+Terdapat improvisasi fitur seperti (pilih satu): 
+- Custom Dialog ketika menghapus buku.
+- Dapat edit buku.
+- dsb.

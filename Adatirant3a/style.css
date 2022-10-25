@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*IN GENERAL*/
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+    color:#4040c0;
+}
+
+/*BUTTON*/
+input, button {
+    font-size: 15px;
+}
+
+
+/*SECTION TITLE*/
+h2 {
+    color:#ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
+
+
+/*HEADER*/
+.header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#4040c0;
+    color: #FFFFFF;
+    
+}
+
+.header > .headerTitle{
+    font-size: 40pt;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*INPUT AND SEARCH*/
+.leftSection{
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+/*SHELVES*/
+.rightSection{
+    flex-grow: 3;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+/*INPUT*/
+.inputSection {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color:#4040c0;
+}
+
+/*INPUT LABEL*/
+.inputSection > form > .input > label {
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/*INPUT BOX*/
+.inputSection > form > .input {
+    margin-bottom: 20px;
+    border: none;
+}
+
+/*INPUT BOX'S INSIDE*/
+.inputSection > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*CHECKBOX AND ALL*/
+.inputSection > form > .inputInline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.inputSection > form > .inputInline > label {
+    color:#ffffff;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+/*INPUT BUTTON*/
+.inputSection > form > button {
+    background-color: #ffffff;
+    color: #c04040;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.inputSection > form > button > span {
+    font-weight: bold;
+}
+.inputSection > form > button:hover{
+    background: -webkit-linear-gradient(to right, #600060, #c00000);
+    background: linear-gradient(to right, #600060, #c00000); 
+    color: #FFFFFF;
+    transform: translateY(1);
+}
+
+
+
+
+
+
+
+
+
+/*SEARCH*/
+.searchSection {
+    background-color: #4040c0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: px solid black;
+    border-radius: 10px;
+}
+
+/*INPUT*/
+.searchSection > form {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*INPUT*/
+.searchSection > form > input {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    flex-grow: 4;
+}
+
+.searchSection > form > button {
+    background-color: #ffffff;
+    color: #c04040;   
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    flex-grow: 2;
+    text-transform: uppercase;
+}
+
+.searchSection > form > button:hover {
+    background: -webkit-linear-gradient(to right, #600060, #c00000);
+    background: linear-gradient(to right, #600060, #c00000); 
+    color: #FFFFFF;
+    transform: translateY(1);
+}
+
+
+
+
+
+
+
+/*SHELVES*/
+.shelfBook {
+    background-color: #4040c0;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.shelfBook > .listBook {
+    margin-bottom: 20px;
+}
+
+.shelfBook > .listBook > .itemBook {
+    background-color: #FFFFFF;
+    padding: 15px 15px 15px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.shelfBook > .listBook > .itemBook > h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/*BUTTONS*/
+.shelfBook > .listBook > .itemBook > .action > button {
+    border: 0;
+    padding: 10px;
+    margin: 10px 5px 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.shelfBook > .listBook > .itemBook > .action > .blue {
+    background-color: #4040c0;
+    color: white;
+}
+
+.shelfBook > .listBook > .itemBook > .action > .red {
+    background-color: #c04040;
+    color: white;
+}
+
+.shelfBook > .listBook > .itemBook > .action > .purple {
+    background-color: #c040c0;
+    color: white;
+}
+
+
+
+
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+/*************************************************************/
+
+
+
+
+/*BOOK EDITING*/
+.editPopUp {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    padding-right: 25px;
+    visibility: hidden;   
+}
+.editPopUp.active{
+    visibility: visible;
+}
+.editBox {
+    background-color: #8080ff;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+/*BOOK EDITING LABEL*/
+.editPopUp > .editBox > form > .input > label,
+.editPopUp > .editBox > form > .theLowerPart > .inputSmall > label {
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/*BOOK EDITING BOX*/
+.editPopUp > .editBox > form > .input {
+    
+    margin-bottom: 20px;
+    border: none;
+}
+
+/*BOOK EDITING BOX'S INSIDE*/
+.editPopUp > .editBox > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*BOOK EDITING'S LOWER PART*/
+.theLowerPart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*BOOK EDITING BOX'S INSIDE FOR ID*/
+.editPopUp > .editBox > form > .theLowerPart > .inputSmall > input {
+    display: block;
+    flex-grow: 2;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.editCloseButton, .editSubmitButton {
+    margin-left: 10px;
+    flex-grow: 1;
+    background: #4040c0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+

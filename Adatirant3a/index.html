@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <h1 class="headerTitle">Bookshelf app</h1>
+    </header>
+
+    <main>
+      <!--ADDITION AND SEARCH SECTION-->
+      <section class="leftSection">
+        <section class="inputSection">
+          <h2>Add a new book here</h2>
+          <form id="inputBook">
+            <div class="input">
+              <label for="inputBookTitle">Title</label>
+              <input id="inputBookTitle" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookAuthor">Author</label>
+              <input id="inputBookAuthor" type="text" required>
+            </div>
+            <div class="input">
+              <label for="inputBookYear">Year</label>
+              <input id="inputBookYear" type="number" required>
+            </div>
+            <div class="inputInline">
+              <label for="inputBookIsComplete">I've finished reading this</label>
+              <input id="inputBookIsComplete" type="checkbox">
+            </div>
+            <button id="bookSubmit" type="submit">Put the book into the shelf</button>
+          </form>
+        </section>
+        <section class="searchSection">
+          <h2>Find a book by title</h2>
+          <form id="searchBook">
+            <input id="searchBookTitle" type="text">
+            <button id="searchSubmit" type="submit">Search</button>
+          </form>
+        </section>
+      </section>
+
+
+
+      <!--SHELVES SECTION-->
+      <section class="rightSection">
+        <section class="shelfBook">
+          <h2>Unfinished books</h2>
+          <div id="incompleteBookshelfList" class="listBook">
+          </div>
+        </section>
+        
+        <section class="shelfBook">
+          <h2>Finished books</h2>
+          <div id="completeBookshelfList" class="listBook">
+          </div>
+        </section>
+      </section>
+      
+
+
+
+
+      <!---->
+      <!---->
+      <!---->
+      <!---->
+      <!--BOOK EDITING DIVISION-->
+      <div class="editPopUp" id="editPopUp">
+            <div class="editBox">
+                <h2>Edit this book's data</h2>
+                <form class="editForm" id="editForm">
+                    
+                    
+                    <div class="input">
+                        <label for="title">Title </label>
+                        <input id="titleEdit" type="text" name="title" maxlength="100">
+                    </div>
+                    <div class="input">
+                        <label for="author">Author </label>
+                        <input id="authorEdit" type="text" name="author" maxlength="100">
+                    </div>
+                    <div class="input">
+                        <label for="year">Year </label>
+                        <input id="yearEdit" type="text" name="year" maxlength="100">
+                    </div>
+                    <div class="theLowerPart">
+                      <div class="inputSmall">
+                        <label for="id" class="formLabel">id</label>
+                        <input class="formInput" type="text" id="idEdit" name="id">
+                      </div>
+                      <button type="reset" class="editCloseButton">Close</button>
+                      <!--
+                      <input type="submit" value="Submit" name="Update" class="editSubmitButton">
+                      -->
+                      <button id="editSubmit" type="submit" class="editSubmitButton">Submit</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+
+
+      
+
+    </main>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
